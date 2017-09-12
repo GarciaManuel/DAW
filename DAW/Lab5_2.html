@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Op Technology</title>
+  <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
+  <link rel=stylesheet type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="styles/styles.min.css">
+</head>
+
+<body>
+  <div class="ui inverted menu">
+    <a class="item">Browse</a>
+    <a class="item">Store</a>
+    <div class="right menu">
+      <a class="item">Sign Up</a>
+      <a class="item">Help</a>
+    </div>
+  </div>
+  <h1 id ="tech">Tech Item's</h1>
+  <div class="ui grid">
+    <div class="four wide column">
+      <div class="ui vertical menu">
+        <div class="item">
+          <div class="ui input"><input type="text" placeholder="Search..."></div>
+        </div>
+        <div class="item">
+          Home
+          <div class="menu">
+            <a class="active item">Search</a>
+            <a class="item">Add</a>
+            <a class="item">Remove</a>
+          </div>
+        </div>
+        <a class="item">
+                <i class="grid layout icon"></i> Browse
+              </a>
+        <a class="item">
+                Messages
+              </a>
+        <div class="ui dropdown item">
+          More
+          <i class="dropdown icon"></i>
+          <div class="menu">
+            <a class="item"><i class="edit icon"></i> Edit Profile</a>
+            <a class="item"><i class="globe icon"></i> Choose Language</a>
+            <a class="item"><i class="settings icon"></i> Account Settings</a>
+          </div>
+        </div>
+      </div>
+      <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+        <div class="ui info message hidden" draggable="true" ondragstart="drag(event)"  id="take">
+          <i class="close icon"></i>
+          <div class="header">
+            Why is bigger the amount?
+          </div>
+          <ul class="list">
+            <li>It's good to see you again.</li>
+            <li>Did you know that the item is going to disappear soon?, thats the reason!</li>
+          </ul>
+        </div>
+      </div>
+      <br><br>
+      <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+      </div>
+
+
+
+    </div>
+    <div class="twelve wide column">
+      <div class="ui three column grid">
+        <div class="column">
+          <div class="ui segment">
+            <div class="ui black ribbon label" id ="tab">
+              <i class="cube icon"></i> Amount: <span id="q1">2</span>
+            </div>
+            <img class="ui bordered fluid image" src="images/razer.png">
+            <div class="ui segments">
+              <div class="ui  segment">
+                <p>Razer Pro Blazer </p>
+              </div>
+              <div class="ui red segment">
+                <div class="ui grid">
+                  <div class="ten wide column">
+                <div class="ui tag labels">
+                  Price:
+                  <a class="ui blue label">
+                          $1250.00
+                        </a>
+                  <p>
+                    Discount:
+                    <a class="ui red label">
+                              15%
+                          </a>
+                  </p>
+                    </div>
+                  </div>
+                    <div class="six wide column">
+                          <button class="ui inverted blue button dele" id="button_1">Buy it</button>
+                    </div>
+
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+          </div>
+
+        <div class="column">
+          <div class="ui segment">
+            <div class="ui black ribbon label">
+              <i class="cube icon"></i> Amount: <span id="q2">5</span>
+            </div>
+            <img class="ui bordered fluid image" src="images/clock.png">
+            <div class="ui segments">
+              <div class="ui  segment">
+                <p>Kickstarter Clock Limited Edition </p>
+              </div>
+              <div class="ui yellow segment">
+                <div class="ui grid">
+                  <div class="ten wide column">
+                    <div class="ui tag labels">
+                      Price:
+                      <a class="ui blue label">
+                              $175.00
+                            </a>
+                      <p>
+                        Discount:
+                        <a class="ui yellow label">
+                                5%
+                              </a>
+                      </p>
+                  </div>
+                </div>
+                  <div class="six wide column">
+                    <button class="ui inverted blue button dele" id="button_2">Buy it</button>
+
+                  </div>
+
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="ui segment">
+            <div class="ui black ribbon label">
+              <i class="cube icon"></i> Amount: <span id="q3">20</span>
+            </div>
+            <img class="ui bordered fluid image" src="images/iphone.png">
+            <div class="ui segments">
+              <div class="ui  segment">
+                <p>iPhone 9 Plus</p>
+              </div>
+              <div class="ui green segment">
+                <div class="ui grid">
+                  <div class="ten wide column">
+                <div class="ui tag labels">
+                  Price:
+                  <a class="ui blue label">
+                          $276.00
+                        </a>
+                  <p>
+                    Discount:
+                    <a class="ui green label">
+                            10%
+                          </a>
+                  </p>
+                </div>
+              </div>
+                    <div class="six wide column">
+                      <button class="ui inverted blue button dele" id="button_3">Buy it</button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="ui modal">
+    <i class="close icon"></i>
+    <div class="header" id="title">
+      Profile Picture
+    </div>
+    <div class="image content" >
+      <div class="ui medium image">
+        <img id="image" src="">
+      </div>
+      <div class="ui grid">
+        <div class="ten wide column">
+          <div class="description" id="description">
+            <div class="ui header">We've auto-chosen a profile image for you.</div>
+            <p>We've grabbed the following image from the <a href="https://www.gravatar.com" target="_blank">gravatar</a> image associated with your registered e-mail address.</p>
+            <p>Is it okay to use this photo?</p>
+          </div>
+          <br />
+          <br>
+          <div class="ui right labeled left icon input">
+              <i class="tags icon"></i>
+              <input type="number" value="" id="amount" placeholder="Enter tags">
+              <a class="ui tag label">
+                Quantity
+              </a>
+            </div>
+
+
+        </div>
+        <div class="six wide column" >
+
+            <div>
+              Cost
+            </div>
+            <div class="ui mini icon input">
+              <input disabled type="number" id="cost" value="">
+              <i class="dollar icon"></i>
+            </div>
+
+            <div>
+              IVA
+            </div>
+            <div class="ui mini icon input">
+              <input disabled type="number" id="iva" value="">
+              <i class="percent icon"></i>
+            </div>
+              <br><br>
+
+
+
+        </div>
+      </div>
+
+    </div>
+    <div class="actions">
+
+      <div class="ui mini left action input">
+        <button class="ui positive teal labeled icon button"  onclick="stock()">
+          <i class="cart icon"></i>
+          Checkout
+        </button>
+        <input disabled type="number" id="total" value="">
+      </div>
+      <div class="ui black deny button">
+        Cancel
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" charset="utf-8"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js" charset="utf-8"></script>
+  <script src="lab5_2.js" charset="utf-8"></script>
+</body>
+
+</html>

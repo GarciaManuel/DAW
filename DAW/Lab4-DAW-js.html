@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Javascript</title>
+  <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
+  <link rel=stylesheet type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="styles/styles.min.css">
+
+</head>
+
+<body>
+  <div class="ui pointing menu">
+      <a class="item">
+        Home
+      </a>
+      <a class="item">
+        Lab1
+      </a>
+      <a class="item">
+        Lab3
+      </a>
+      <a class="active item">
+        Lab4
+      </a>
+      <div class="right menu">
+        <div class="item">
+          <div class="ui transparent icon input">
+            <input type="text" placeholder="Search...">
+            <i class="search link icon"></i>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <h1 class="ui header" style="padding-top: 50px; padding-bottom: 30px">Javascript Ex.</h1>
+  <article class="">
+    <h3> Problema ACM: "El abuelo Lailo" </h3>
+    <p>No sabemos concretamente por qu´e, pero al abuelo Laino no le agrada una de las vocales de la lengua castellana. Tal vez sea para ´el engorroso declamarla, con certeza el tartamudeo estaba mal contemplado en ´epocas pasadas. En todo caso, afortunadamente
+      esa vocal no est´a presente en la palabra “abuelo”, de manera que la prole de sus v´astagos no se encuentra en apuros cuando le llama afectuosamente de ese modo. El abuelo Laino trabaj´o con nulo descanso durante d´ecadas, por lo que se prepara
+      para tomar un justo receso de sus arduas tareas. En este lapso, desea emprender una aventura atravesando parajes lejanos, para lo cual est´a ahora empacando su maleta. El abuelo Laino no desea llevar en ella objetos cuyos nombres contengan la vocal
+      que tanto lo consterna, no vaya a ser que al verlos se vea forzado a pensar en la tan censurable letra durante su reposo. Su tarea es ayudarlo en esta labor, para lo cual deben aconsejarlo sobre cu´ales de los objetos que posee puede empacar. </p>
+
+    <p><strong><em>Entrada:</em></strong><br> Una l´ınea conteniendo una cadena no vac´ıa de hasta 20 caracteres de la ‘a’ a la ‘z’, indicando el nombre de un objeto que posee el abuelo Laino.</p>
+    <p><strong>Salida:<em></em></strong> <br> Imprimir en la salida una l´ınea conteniendo un car´acter que representa si el abuelo Laino puede empacar el objeto cuyo nombre aparece en la entrada. El car´acter debe ser una ‘S’ si el abuelo Laino puede empacarlo, y una ‘N’ caso contrario.</p>
+  </article>
+
+  <div class="centered">
+    <div class="ui input focus">
+      <input type="text" id="sentencia" name="sentencia" placeholder="Palabra">
+    </div>
+
+    <button class="ui inverted red button" type="button" name="button">Responder</button>
+  </div>
+
+
+  <div class="ui celled grid">
+    <div class="row">
+      <div class="three wide column">
+        <img>
+      </div>
+      <div class="thirteen wide column">
+        <button class="ui primary basic button" type="button" name="button1">1er Problema</button>
+        <button class="ui primary basic button" type="button" name="button2">2do Problema</button>
+        <button class="ui primary basic button" type="button" name="button3">3er Problema</button>
+        <button class="ui primary basic button" type="button" name="button4">4to Problema</button>
+        <button class="ui primary basic button" type="button" name="button5">5to Problema</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="seven wide column">
+        <h4>Contexto</h4>
+      </div>
+      <div class="six wide column">
+        <h4>Respuesta:</h4>
+      </div>
+    </div>
+    <div class="row">
+
+      <div class="seven wide column" id="problema">
+        <p>Entrada: un número pedido con un prompt. Salida: Una tabla con los números del 1 al número dado con sus cuadrados y cubos. Utiliza document.write para producir la salida </p>
+      </div>
+      <div class="six wide column" id="answer">
+
+      </div>
+    </div>
+  </div>
+
+<div class="ui raised very padded text container segment">
+  <ul class="collection">
+                    <li>¿Qué diferencias y semejanzas hay entre Java y JavaScript?<div class="response">
+                        R= Java es compilado mientras JS es interpretado, a la vez las necesidades de maquina somn menores al correr JS que Java, el uso de variables dinamicas en JS es totalmente opuesto a Java. Otro punto a resaltar es la sintaxis que varia un poco y que JS es capaz de manipular HTML en tiempo real sin la necesidad de crear una aplicacion, ademas de los archivos que se generan en JAVA <br>Mientras que en cuanto a similitudes ambos lenguajes pueden trabajar modelos orientados a objetos, funciones, etc.
+                    </div></li>
+                    <li>¿Qué métodos tiene el objeto Date? (Menciona al menos 5*)<div class="response">
+                      <ul>
+                        <li><strong>getDate():</strong> Get the day as a number (1-31)</li>
+                        <li><strong>getDay():</strong>	Get the weekday as a number (0-6)</li>
+                        <li><strong>getFullYear():</strong>	Get the four digit year (yyyy)</li>
+                        <li><strong>getHours():</strong>	Get the hour (0-23)</li>
+                        <li><strong>getMilliseconds():</strong>	Get the milliseconds (0-999)</li>
+                        <li><strong>getMinutes():</strong>	Get the minutes (0-59)</li>
+                        <li><strong>getMonth():</strong>	Get the month (0-11)</li>
+                        <li><strong>getSeconds():</strong>	Get the seconds (0-59)</li>
+                        <li><strong>getTime():</strong>	Get the time (milliseconds since January 1, 1970)</li>
+                      </ul>
+                    </div></li>
+                    <li>¿Qué métodos tienen los arreglos? (Menciona al menos 5*)<div class="response">
+                    <ul>
+                      <li><strong>splice()</strong></li>
+                      <li><strong>concat()</strong></li>
+                      <li><strong>slice()</strong></li>
+                      <li><strong>toString()</strong></li>
+                      <li><strong>pop()</strong></li>
+                      <li><strong>push()</strong></li>
+                      <li><strong>shift()</strong></li>
+                      <li><strong>unshift()</strong></li>
+
+                    </ul>
+                    </div></li>
+                    <li>¿Cómo se declara una variable con alcance local dentro de una función?<div class="response">
+                          R= var (nombre de la variable);
+                    </div> </li>
+                    <li>¿Qué implicaciones tiene utilizar variables globales dentro de funciones?<div class="response">
+                        R= Que todos los métodos, objetos, e incluso variable spueden alterar su valor y causar un error si entra ne conflicto con alguna referencia que se haya hecho con esa variable global.<br/>Tienden a ser muy cambiantes.
+                    </div></li>
+                    <li>¿Qué método de String se puede utilizar para buscar patrones con expresiones regulares?¿Para qué podrías utilizar esto en una aplicación web?<div class="response">
+                      R= <img src="images/Exp_Reg.png" alt="Options" id="exp"><br />Claro que si ya que facilita un sin numero de aplicaciones y a la vez permite enfocar mejor los recursos del ordenador y el js escrito.
+                    </div></li>
+                </ul>
+</div>
+
+
+
+  <script src="script.js" charset="utf-8"></script>
+</body>
+
+</html>

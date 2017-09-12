@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Javascript</title>
+  <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
+  <link rel=stylesheet type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="styles/styles.min.css">
+
+</head>
+
+<body>
+  <div class="ui pointing menu">
+      <a class="item">
+        Home
+      </a>
+      <a class="item">
+        Lab6
+      </a>
+      <a class="item">
+        Lab7
+      </a>
+      <a class="active item">
+        Lab9
+      </a>
+      <div class="right menu">
+        <div class="item">
+          <div class="ui transparent icon input">
+            <input type="text" placeholder="Search...">
+            <i class="search link icon"></i>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <h1 class="ui header" style="padding-top: 50px; padding-bottom: 30px">PHP Exercises </h1>
+  <article class="">
+    <h3> Problema ACM: "El abuelo Lailo" </h3>
+    <p>No sabemos concretamente por qu´e, pero al abuelo Laino no le agrada una de las vocales de la lengua castellana. Tal vez sea para ´el engorroso declamarla, con certeza el tartamudeo estaba mal contemplado en ´epocas pasadas. En todo caso, afortunadamente
+      esa vocal no est´a presente en la palabra “abuelo”, de manera que la prole de sus v´astagos no se encuentra en apuros cuando le llama afectuosamente de ese modo. El abuelo Laino trabaj´o con nulo descanso durante d´ecadas, por lo que se prepara
+      para tomar un justo receso de sus arduas tareas. En este lapso, desea emprender una aventura atravesando parajes lejanos, para lo cual est´a ahora empacando su maleta. El abuelo Laino no desea llevar en ella objetos cuyos nombres contengan la vocal
+      que tanto lo consterna, no vaya a ser que al verlos se vea forzado a pensar en la tan censurable letra durante su reposo. Su tarea es ayudarlo en esta labor, para lo cual deben aconsejarlo sobre cu´ales de los objetos que posee puede empacar. </p>
+
+    <p><strong><em>Entrada:</em></strong><br> Una l´ınea conteniendo una cadena no vac´ıa de hasta 20 caracteres de la ‘a’ a la ‘z’, indicando el nombre de un objeto que posee el abuelo Laino.</p>
+    <p><strong>Salida:<em></em></strong> <br> Imprimir en la salida una l´ınea conteniendo un car´acter que representa si el abuelo Laino puede empacar el objeto cuyo nombre aparece en la entrada. El car´acter debe ser una ‘S’ si el abuelo Laino puede empacarlo, y una ‘N’ caso contrario.</p>
+    <p><strong>Banco de datos:<em></em></strong> <br>echo oracion("Familia")<br>echo oracion("Montañal");</p>
+
+  </article>
+
+  <div class="centered">
+    <div class="ui input focus">
+      <input  disabled type="text" id="sentencia" value="Familia" name="sentencia" placeholder="Palabra">
+    </div>
+
+    <button class="ui inverted red button" type="button" name="button"><?php echo oracion("Familia");?></button>
+  </div>
+  <div class="centered">
+    <div class="ui input focus">
+      <input  disabled type="text" id="sentencia" value="Montañal" name="sentencia" placeholder="Palabra">
+    </div>
+
+    <button class="ui inverted red button" type="button" name="button"><?php echo oracion("Montañal");?></button>
+  </div>
+
+
+  <div class="ui celled grid">
+
+    <div class="row">
+      <div class="seven wide column">
+        <h4>Contexto</h4>
+      </div>
+      <div class="six wide column">
+        <h4>Respuesta:</h4>
+      </div>
+    </div>
+    <div class="row">
+
+      <div class="seven wide column" id="problema">
+        <p>Una función que reciba un arreglo de números y devuelva su promedio</p>
+        <br>
+        <p>Datos: Arreglo1=[4,10,2,7,8,9] y Arreglo2=[7,8,6,5,2,1]</p>
+      </div>
+      <div class="six wide column" id="answer">
+        <?php
+        echo "R= Promedio: ".promedios([4,10,2,7,8,9])."<br />";
+        echo "R= Promedio: ".promedios([7,8,6,5,2,1])."<br />";
+        ?>
+      </div>
+    </div>
+    <div class="row">
+
+      <div class="seven wide column" id="problema">
+        <p>Una función que reciba un arreglo de números y devuelva su mediana</p>
+        <br>
+        <p>Datos: Arreglo1=[4,10,2,7,8,9] y Arreglo2=[7,8,6,5,2,1]</p>
+      </div>
+      <div class="six wide column" id="answer">
+          <?php
+          echo "R= Mediana: ".mediana([4,10,2,7,8,9])."<br />";
+          echo "R= Mediana: ".mediana([7,8,6,5,2,1])."<br />";
+          ?>
+      </div>
+    </div>
+    <div class="row">
+
+      <div class="seven wide column" id="problema">
+        <p>Una función que reciba un arreglo de números y muestre la lista de números, y como ítems de una lista html muestre el promedio, la media, y el arreglo ordenado de menor a mayor, y posteriormente de mayor a menor</p>
+        <br>
+        <p>Datos: $arr = array(1,5,6,3,7,9) y $arr2 = array(6,16,4,32,2,9)</p>
+      </div>
+      <div class="six wide column" id="answer">
+        <?php
+        echo lista($arr)."<br />";
+        echo lista($arr2)."<br />";
+        ?>
+      </div>
+    </div>
+    <div class="row">
+
+      <div class="seven wide column" id="problema">
+        <p>Una función que imprima una tabla html, que muestre los cuadrados y cubos de 1 hasta un número n </p>
+        <br>
+        <p>Datos: Numero = 5 y Numero = 8</p>
+
+      </div>
+      <div class="six wide column" id="answer">
+        <?php
+        echo tablas(5);
+        echo tablas(8);
+        ?>
+      </div>
+    </div>
+  </div>
+
+<div class="ui raised very padded text container segment">
+  <ul class="collection">
+                    <li class="collection-item">¿Qué hace la función phpinfo()? Describe y discute 3 datos
+                      que llamen tu atención.<br><div class="response">
+                          R= Muestra la informacion sobre el estado actual de PHP, contiene info de compilacion, extensiones, version, informacion del servidor, opciones de configuracion , licencia etc.<br>
+                          Datos:<br>
+                          <ul>
+                            <li><strong>INFO_VARIABLES: </strong>    PHP proporciona una gran cantidad de variables predefinidas a cualquier script que se ejecute. Muchas de éstas, sin embargo, no pueden ser completamente documentadas ya que dependen del servidor que esté corriendo, la versión y configuración de dicho servidor, y otros factores.</li>
+                            <li><strong>INFO_CONFIGURATION: </strong>       Describe los valores Locales y Maestros de las directivas PHP como errores, cantidad de bytes, variables globales regsitradas etc</li>
+                            <li><strong>INFO_ENVIRONMENT:</strong>           Estas variables son importadas en el espacio de nombres global de PHP desde el entorno bajo el que está siendo ejecutado el intérprete PHP. Muchas son entregadas por el intérprete de comandos bajo el que PHP está corriendo y diferentes sistemas suelen tener diferentes tipos de intérpretes de comandos, en pocas palabras es el entorno en dodne se desarrolla</li>
+                          </ul>
+                      </div></li>
+                    <li class="collection-item">¿Qué cambios tendrías que hacer en la configuración del
+                      servidor para que pudiera ser apto en un ambiente de
+                      producción?<br><div class="response">
+                        R= Realmente no se recomienda que XAMPP se emplee para produccion pero lo primero que se debe de realizar es implementar seguridad a la red del servidor donde estara montado ya se un router, firewall.<br>
+                        Posteriormente se recomienda que se realizen cambio sy adecuaciones a la "Consola de Seguridad de XAMPP" con el fin de poder agregar contraseña al SQL y PHP.<br>
+                        Mas adelante tenemos la facilidad de agregar paginas de ejemplo para evitar que algun usuario acceda a todos nuestros archivos, despues se debera de configurar el numero de usuarios a los que se les dara servicio, y en todo caso agregar Tomcats para satisfacerlos, en este punto tambies es recomendable agregar un firewall interno.
+                        Y finalmente debe de intentarse agregar seguridad a FileZilla y Mercury
+                      </div></li>
+                    <li class="collection-item">¿Cómo es que si el código está en un archivo con código html
+                      que se despliega del lado del cliente, se ejecuta del lado del
+                      servidor? Explica.<br><div class="response">
+                        R= Ya que el usaurio al buscar/conectarse a una pagina web lo que esta realizando es solicitarle al servidor por medio de un HTTP Request, la informacion contenida en ese pagina que a la vez se ocnecta con un archivo, este contendra la informacion que se desea buscar en un archivo de formato HTML ya que es necesario que el navegador lo  pueda comprender.<br>
+                        Lo que sucede es que al llegar la solicitud al servidor este traduce PHP y genera el contenido necesario para anexarlo al HTML que sera devuelto al usuario, al acabar , el archivo finalizado se le es enviado como un HTTP Response para que el navegador lo interprete y el usuario lo pueda visualizar
+                      </div></li>
+                  </ul>
+                  <h3>Referencias</h3>
+                  <div class="reference">
+                    <p>PHP: phpinfo - Manual. (2017). Php.net. Retrieved 6 September 2017, from http://php.net/manual/es/function.phpinfo.php</p>
+
+                        <p>XAMPP FAQs for Windows. (2017). Apachefriends.org. Retrieved 6 September 2017, from https://www.apachefriends.org/es/faq_windows.html</p>
+                  </div>
+</div>
+
+
+
+</body>
+
+</html>

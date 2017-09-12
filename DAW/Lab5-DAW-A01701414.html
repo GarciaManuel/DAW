@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Op Technology</title>
+  <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
+  <link rel=stylesheet type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="styles/styles.min.css">
+  <link rel="stylesheet" type="text/css" href="styles/lab5css.min.css">
+</head>
+
+<body>
+  <div class="ui inverted menu">
+    <a class="item">Browse</a>
+    <a class="item">Store</a>
+    <div class="right menu">
+      <a class="item">Sign Up</a>
+      <a class="item">Help</a>
+    </div>
+  </div>
+  <h1>Registration</h1>
+  <br><br>
+  <div class="ui success message hidden" id="good">
+    <i class="close icon"></i>
+    <div class="header">
+      Your user registration was successful.
+    </div>
+    <p>You may now log-in with the username you have chosen</p>
+  </div>
+
+  <div class="ui error message hidden" id="bad">
+    <i class="close icon"></i>
+    <div class="header">
+      There were some errors with your submission
+    </div>
+    <ul class="list">
+      <li>You must include both a upper and lower case letters in your password.</li>
+      <li>The paswords do not match.</li>
+    </ul>
+  </div>
+
+
+
+  <div class="ui grid">
+    <div class="four wide column">
+
+    </div>
+    <div class="eight wide column">
+
+        <div class="ui raised segment ">
+            <div class="centered">
+              <form id="form" action="" method="post">
+
+                <p>Name</p>
+                <div class="fluid ui input focus" id ="cname">
+            <input type="text" id ="name" name="name" value="" placeholder="Name">
+            </div>
+            <br>
+            <p>Email</p>
+                <div class="fluid ui input focus">
+            <input type="email" id ="email" name="email" value="" placeholder="E-mail">
+            </div>
+            <br>
+            <p>Phone</p>
+            <div class="fluid ui input focus">
+        <input type="tel" id ="tel" name="tel" value="" placeholder="Telefono">
+        </div>
+            <br><br>
+            <div class="ui grid">
+              <div class="eight wide column">
+                <p>Password</p>
+              </div>
+              <div class="eight wide column">
+                <p>Repeat Password</p>
+              </div>
+            </div>
+            <div class="fluid ui input focus error" id="r">
+              <input type="password" id ="pass1" name="" value="" placeholder="Password">
+              <input type="password" id="pass2" name="" value="" placeholder="Repeat password">
+            </div>
+            <br><br>
+            <button class="fluid ui primary button" id="sub" type="button" name="button" onclick="validate()">Submit</button>
+
+            <div class="ui warning message hidden" id="divhid">
+            <i class="close icon"></i>
+            <div class="header">
+              You must write your:  <span id="msg"></span></span>.
+            </div>
+                Type it!
+            </div>
+
+
+              </form>
+
+            </div>
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <div class="ui basic modal">
+    <div class="ui icon header">
+      <i class="archive icon"></i>
+      Registration Sucessfull
+    </div>
+    <div class="content party">
+      <h2>You have been registered as: </h2>
+      <div id="out">
+        <h4>Name:  " <strong><span id="wn"></span> </strong>"</h4>
+        <p>Email:  " <span id="we"></span> "</p>
+        <p>Celphone:  " <span id="wc"></span> "</p>
+        <hp>Password:  "<span id="wp"></span> "</p>
+      </div>
+
+    </div>
+    <div class="actions">
+      <div class="ui red basic cancel inverted button">
+        <i class="remove icon"></i>
+        No
+      </div>
+      <div class="ui green ok inverted button">
+        <i class="checkmark icon"></i>
+        Yes
+      </div>
+    </div>
+  </div>
+<br><br>
+  <div class="ui raised very padded text container segment">
+    <h3>Preguntas</h3>
+    <ul class="collection">
+                    <li class="collection-item">¿Por qué es una buena práctica usar JavaScript para checar que sean válidos los inputs de las formas antes de enviar los datos al servidor?<div class="response">
+                      R= Ya que asi se evitan request de mas al servidor, a la vez evitas que informacion inutil llegue a este mismo y oueda causar acumulacion de basura, ademas de agilizar los procesos.
+                    </div></li>
+                    <li class="collection-item">¿Cómo puedes saltarte la seguridad de validaciones hechas con JavaScript?<div class="response">
+                      R= Alterando el html form con "novalidate" o evitando que se haga el request, en otro caso eliminando el js.
+                    </div></li>
+                    <li class="collection-item">Si te puedes saltar la seguridad de las validaciones de JavaScript, entonces ¿por qué la primera pregunta dice que es una buena práctica?<div class="response">
+                      R= Ya que posteriromente se puede proteger tu html y js para evitar esas practicas, ademas la infrmacion no se enviara hasta el servidor a menos que se haga el request o este validado entonces no causari problema alguno.
+                    </div></li>
+                </ul>
+  </div>
+  <div class="ui raised very padded text container segment">
+    <ul class="collection">
+                      <li class="collection-item">¿Cuáles son las diferencias entre los posibles valores de la propiedad <code>position</code>?<div class="response">
+                          <ul>
+                            <li>static: Acaorde al flujo normal, nada le afecta</li>
+                            <li>relative: Acorde al flujo noraml, offset sin efecto, z-Index no auto</li>
+                            <li>absolut: Ubicado acorde al bloque contenedor</li>
+                            <li>fixed: No se mueve al bajar la pantalla</li>
+                            <li>acorde al flujo normal ademas: "offset relative to its flow root and containing block based on the values of top, right, bottom, and left."</li>
+                          </ul>
+                      </div></li>
+                      <li class="collection-item">¿Cuáles son los valores estándar para la propiedad <code>visibility</code>?<div class="response">
+                          <ul>
+                            <li>visible</li>
+                            <li>hidden</li>
+                            <li>collapse</li>
+                          </ul>
+                      </div></li>
+                      <li class="collection-item">¿Qué es el <code>zIndex</code> y para qué sirve?<div class="response">
+                        R= Cuando varios elementos se enciman, z-order determina cual se ubica en la parte superior. Mayor z-index cubre a otro de menor.
+                      </div></li>
+                  </ul>
+                  <br>
+        <p>Referencias</p><br>
+        <div class="reference">
+          <p>JavaScript DOM EventListener. (2017). W3schools.com. Retrieved 25 August 2017, from https://www.w3schools.com/js/js_htmldom_eventlistener.asp</p>
+          <p>position. (2017). Mozilla Developer Network. Retrieved 25 August 2017, from https://developer.mozilla.org/en-US/docs/Web/CSS/position</p>
+          <p>Window setInterval() Method. (2017). W3schools.com. Retrieved 25 August 2017, from https://www.w3schools.com/jsref/met_win_setinterval.asp</p>
+          <p>Window setTimeout() Method. (2017). W3schools.com. Retrieved 25 August 2017, from https://www.w3schools.com/jsref/met_win_settimeout.asp</p>
+          <p>z-index. (2017). Mozilla Developer Network. Retrieved 25 August 2017, from https://developer.mozilla.org/es/docs/Web/CSS/z-index</p>
+
+        </div>
+          </div>
+
+</body>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" charset="utf-8"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js" charset="utf-8"></script>
+  <script src="lab5.js" charset="utf-8"></script>
+</body>
+
+</html>
